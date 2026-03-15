@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
+
+:root {
+  --lt-green: #527a1e;
+  --dk-green: #142e01;
+  --green: #81b73c;
+}
+
+.ozzo {
+  background: white;
+  color: black;
+  font-family: "Quicksand", sans-serif;
+  /* max-width: 450px; */
+}

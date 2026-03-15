@@ -1,0 +1,9 @@
+.btn {
+  background: var(--green);
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.btn:focus {
+  outline: none;
+}

@@ -1,0 +1,7 @@
+.extra-stuff {
+  color: var(--green);
+  padding: 1em;
+  width: fit-content;
+  user-select: none;
+  font-family: "Quicksand", sans-serif;
+}

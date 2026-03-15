@@ -1,0 +1,54 @@
+:root {
+  --lt-green: #527a1e;
+  --dk-green: #142e01;
+  --green: #81b73c;
+}
+
+body {
+  background: linear-gradient(to left top, var(--lt-green), var(--dk-green))
+    no-repeat fixed;
+  min-height: 100vh;
+  font-family: "Quicksand", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+.ditem {
+  width: 100%;
+}
+
+.ddoa {
+  display: flex;
+  justify-content: before;
+  max-width: 850px;
+  width: fit-content;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 500px) {
+  .ddoa {
+    flex-direction: column-reverse;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--green);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,75 @@
+.container-for-iconsdescs {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.iconimg {
+  width: 200px;
+}
+
+.conta {
+  width: 100%;
+}
+
+.container-1 {
+  animation: opacity 4s, top-to-bottom 2s 4s;
+}
+.container-2 {
+  animation: opacity 5s, top-to-bottom 2s 5s;
+}
+.container-3 {
+  animation: opacity 6s, top-to-bottom 2s 6s;
+}
+
+@media screen and (max-width: 900px) {
+  .container-for-iconsdescs {
+    flex-direction: column;
+  }
+  .container-1 {
+    animation: opacity 4s, left-to-right 2s 4s;
+  }
+  .container-2 {
+    animation: opacity 5s, left-to-right 2s 5s;
+  }
+  .container-3 {
+    animation: opacity 6s, left-to-right 2s 6s;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes left-to-right {
+  from {
+    transform: translate(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes top-to-bottom {
+  from {
+    transform: translate(0, -50%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+  }
+}

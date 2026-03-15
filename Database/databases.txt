@@ -1,0 +1,12 @@
+>> Databases used <<
+--------------------
+
+-- users --
+ CREATE TABLE users(id INT NOT NULL AUTO_INCREMENT, username VARCHAR(255), password VARCHAR(255), PRIMARY KEY (id) );
+ 
+ -- comments --
+CREATE TABLE comments( id int NOT NULL AUTO_INCREMENT, username varchar(255) NOT NULL, user_id VARCHAR(20) NOT NULL,content VARCHAR(400), PRIMARY KEY (id) );
+
+-- articles --
+
+CREATE TABLE articles(id int NOT NULL AUTO_INCREMENT, titlu varchar(500) NOT NULL, body VARCHAR(10000) NOT NULL, autor VARCHAR(255), videoUrl VARCHAR(500) NOT NULL, PRIMARY KEY (id) );

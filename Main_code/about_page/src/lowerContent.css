@@ -1,0 +1,40 @@
+.title-1-lower {
+  width: fit-content;
+}
+
+.imageoffer {
+  max-width: 125px;
+}
+.icondesc-1 {
+  animation: opaque 2s, opacityfade 2s 2s;
+}
+.icondesc-2 {
+  animation: opaque 4s, opacityfade 4s 2s;
+}
+.icondesc-3 {
+  animation: opaque 6s, opacityfade 6s 2s;
+}
+
+@keyframes opaque {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes opacityfade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .container-of-icons-and-descs {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,47 @@
+.green {
+  color: #81b73c;
+  font-weight: bold;
+}
+
+.olqp {
+  background: url("https://imj31us4am50.github.io/imgs/zebra-bw.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.title,
+.first-cont,
+.second-cont {
+  width: fit-content;
+}
+
+.animated-logo-about {
+  animation: opacity-fade 6s;
+}
+
+.donate-a {
+  transition: color 0.5s, opacity 0.5s;
+  font-size: inherit;
+}
+
+.donate-a:hover {
+  font-size: inherit;
+  color: white;
+  opacity: 0.8;
+}
+
+@keyframes opacity-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .for-about {
+    flex-direction: column;
+  }
+}

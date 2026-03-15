@@ -1,0 +1,53 @@
+.part-container {
+  background: url("https://imj31us4am50.github.io/imgs/cool-lion-2-bw.jpeg")
+    no-repeat fixed;
+  background-size: cover;
+  height: fit-content;
+}
+
+.some-container-on-part {
+  display: flex;
+}
+
+.empty,
+.part-content {
+  width: 100%;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 760px) {
+  .some-container-on-part {
+    flex-direction: column;
+  }
+}
+
+.donation-button {
+  width: fit-content;
+  border-radius: 50px;
+  padding: 0.75em;
+  background: var(--green);
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: white;
+  transition: background 0.5s, color 0.5s;
+}
+
+.logo-on-donate {
+  max-width: 165px;
+  animation: opacity 2s, left-to-right 2s 2s;
+}
+
+.donation-button:hover {
+  background: white;
+  opacity: 1;
+  color: #81b73c;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
